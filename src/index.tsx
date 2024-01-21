@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+import 'bulma/css/bulma.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import './styles/index.scss';
+
+import { App } from './App';
+import { GlobalStateProvider } from './store/store';
+
+const rootElement = document.getElementById('root') as HTMLDivElement;
+
+createRoot(rootElement)
+  .render(
+    <GlobalStateProvider>
+      <App />
+    </GlobalStateProvider>,
+  );
