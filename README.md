@@ -1,9 +1,11 @@
-# React TypeScript Starter Pack
+# Todo App
 
-To use this template click `Use this template`
+This project is clone of popular Todo application.
 
-### Available Scripts
+In this project I have learned how to manage asynchronous tasks and handle app global state
+and updates using Context and Reducer.
 
-`Deploy` - available to deploy your application to gh-pages
+I developed this project using React, TypeScript, Fetch API, REST API, Http.
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Useful links:
+  - [DEMO LINK](https://yuran007.github.io/todo-app/)
